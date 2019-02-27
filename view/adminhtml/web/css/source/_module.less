@@ -1,0 +1,12 @@
+@dungblog-icons-admin__font-name-path: '@{baseDir}Dung_Blog/fonts/icomoon';
+@dungblog-icons-admin__font-name : 'Blog';
+.lib-font-face(
+  @family-name:@dungblog-icons-admin__font-name,
+  @font-path: @dungblog-icons-admin__font-name-path,
+  @font-weight: normal,
+  @font-style: normal
+);
+.admin__menu .item-blog.parent.level-0 > a:before {
+  font-family: @dungblog-icons-admin__font-name;
+  content: "\e922";
+}

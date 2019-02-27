@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dung_Blog::blog"
+             title="Blog Manger"
+             module="Dung_Blog"
+             sortOrder="15"
+             resource="Dungbv_Banner::banner_manager"
+        />
+        <add id="Dung_blog::blog_index"
+             title="List All Blog"
+             module="Dung_Blog"
+             sortOrder="1"
+             action="blog/blog/index"
+             parent="Dung_Blog::blog"
+             resource="Dungbv_Banner::banner_manager"
+        />
+        <add id="Dung_Blog::blog_save"
+             title="Add New Blog"
+             module="Dung_Blog"
+             sortOrder="1"
+             action="blog/blog/add"
+             parent="Dung_Blog::blog"
+             resource="Dungbv_Banner::banner_manager"
+        />
+    </menu>
+</config>
